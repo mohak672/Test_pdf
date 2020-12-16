@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/pdf_viewer"
+        android:layout_width="250dp"
+        android:background="@drawable/pdf_view"
+        android:layout_height="250dp" />
+
+    <TextView
+        android:id="@+id/tv_pdf"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:hint="Choose Pdf File"
+        android:textColor="@android:color/black"
+        />
+
+    <Button
+        android:id="@+id/btn_choose"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="Choose"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:background="@drawable/rounded_background"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_connect"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:hint="Server Connection"
+        android:textColor="@android:color/black"
+        />
+
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="Connect"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:background="@drawable/rounded_background"
+        android:padding="5dp"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_set"
+                android:visibility="visible"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:hint="Name of Pdf"
+                android:textColor="@android:color/black"
+                />
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="Send"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:background="@drawable/rounded_background"
+                android:padding="5dp"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_receive"
+                android:visibility="visible"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:hint="Received Text"
+                android:textColor="@android:color/black"
+                />
+
+            <Button
+                android:id="@+id/btn_receive"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="Receive"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:background="@drawable/rounded_background"
+                android:padding="5dp"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
